@@ -1,0 +1,651 @@
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub
+$ mkdir GitHubFirstRepo
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub
+$ cd GitHubFirstRepo/
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo
+$ git clone https://github.com/Hemanth-2023/AptroidGitClass1.git
+Cloning into 'AptroidGitClass1'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (7/7), done.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo
+$ ls
+AptroidGitClass1/
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo
+$ cd AptroidGitClass1/
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ ls
+DBConnection.txt  README.md
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ ls
+DBConnection.txt  README.md
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 352 bytes | 25.00 KiB/s, done.
+From https://github.com/Hemanth-2023/AptroidGitClass1
+   f0bb78b..14aac6a  main       -> origin/main
+Updating f0bb78b..14aac6a
+Fast-forward
+ Credentials.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Credentials.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git config --global user.name "Bmatoori"
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git log
+commit 14aac6ae2baaa28278d6b191b79938f01738302f (HEAD -> main, origin/main, origin/HEAD)
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:44:02 2023 +0530
+
+    credentials file added
+
+commit f0bb78bcb258e70263542f16cdf366d8c51158f3
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:29:05 2023 +0530
+
+    DBconnection information added
+
+commit 70d70a12f0170f7ef2852d62a32feb95c20bbf65
+Author: Hemanth-2023 <142800656+Hemanth-2023@users.noreply.github.com>
+Date:   Tue Aug 22 15:57:49 2023 +0530
+
+    Initial commit
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bhargavi_test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git add .
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git commit -m "bhargavi test file"
+[main b596711] bhargavi test file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bhargavi_test.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 158.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hemanth-2023/AptroidGitClass1.git
+   14aac6a..b596711  main -> main
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git log
+commit b596711efe3833fabcd8b1e62e657b28d1095828 (HEAD -> main, origin/main, origin/HEAD)
+Author: Bmatoori <142801268+Bmatoori@users.noreply.github.com>
+Date:   Tue Aug 22 07:19:35 2023 -0400
+
+    bhargavi test file
+
+commit 14aac6ae2baaa28278d6b191b79938f01738302f
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:44:02 2023 +0530
+
+    credentials file added
+
+commit f0bb78bcb258e70263542f16cdf366d8c51158f3
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:29:05 2023 +0530
+
+    DBconnection information added
+
+commit 70d70a12f0170f7ef2852d62a32feb95c20bbf65
+Author: Hemanth-2023 <142800656+Hemanth-2023@users.noreply.github.com>
+Date:   Tue Aug 22 15:57:49 2023 +0530
+
+    Initial commit
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   bhargavi_test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git add .
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git commit -m "thank you"
+[main 55ccee6] thank you
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 100.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hemanth-2023/AptroidGitClass1.git
+   b596711..55ccee6  main -> main
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git log
+commit 55ccee60c005d675d6f7c52cfc3bb8e81304963f (HEAD -> main, origin/main, origin/HEAD)
+Author: Bmatoori <142801268+Bmatoori@users.noreply.github.com>
+Date:   Tue Aug 22 07:26:58 2023 -0400
+
+    thank you
+
+commit b596711efe3833fabcd8b1e62e657b28d1095828
+Author: Bmatoori <142801268+Bmatoori@users.noreply.github.com>
+Date:   Tue Aug 22 07:19:35 2023 -0400
+
+    bhargavi test file
+
+commit 14aac6ae2baaa28278d6b191b79938f01738302f
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:44:02 2023 +0530
+
+    credentials file added
+
+commit f0bb78bcb258e70263542f16cdf366d8c51158f3
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:29:05 2023 +0530
+
+    DBconnection information added
+
+commit 70d70a12f0170f7ef2852d62a32feb95c20bbf65
+Author: Hemanth-2023 <142800656+Hemanth-2023@users.noreply.github.com>
+Date:   Tue Aug 22 15:57:49 2023 +0530
+
+    Initial commit
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git pull
+Already up to date.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ ls
+Credentials.txt  DBConnection.txt  README.md  bhargavi_test.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    bhargavi_test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 282 bytes | 12.00 KiB/s, done.
+From https://github.com/Hemanth-2023/AptroidGitClass1
+   55ccee6..280ee85  main       -> origin/main
+Updating 55ccee6..280ee85
+Fast-forward
+ bhargavi_test.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git log --oneline
+280ee85 (HEAD -> main, origin/main, origin/HEAD) line changes
+55ccee6 thank you
+b596711 bhargavi test file
+14aac6a credentials file added
+f0bb78b DBconnection information added
+70d70a1 Initial commit
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git pull
+From https://github.com/Hemanth-2023/AptroidGitClass1
+ * [new branch]      Feature1   -> origin/Feature1
+ * [new branch]      Feature2   -> origin/Feature2
+Already up to date.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git checkout Feature2
+Switched to a new branch 'Feature2'
+branch 'Feature2' set up to track 'origin/Feature2'.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ echo "thank you for visiting Im fine in feature branch2" >> filw1.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git status
+On branch Feature2
+Your branch is up to date with 'origin/Feature2'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        filw1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git add .
+warning: in the working copy of 'filw1.txt', LF will be replaced by CRLF the next time Git touches it
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git commit -m "awesome"
+[Feature2 01fe395] awesome
+ 1 file changed, 1 insertion(+)
+ create mode 100644 filw1.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 165.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hemanth-2023/AptroidGitClass1.git
+   280ee85..01fe395  Feature2 -> Feature2
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git clone -b Feature2
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (Feature2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git merge Feature2
+Updating 280ee85..01fe395
+Fast-forward
+ filw1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 filw1.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git log
+commit 01fe395200b69bac3d698f7319a1129b85e021bc (HEAD -> main, origin/Feature2, Feature2)
+Author: Bmatoori <142801268+Bmatoori@users.noreply.github.com>
+Date:   Tue Aug 22 08:02:19 2023 -0400
+
+    awesome
+
+commit 280ee85541d93ec77bfa94ecbb52908e2a9e295c (origin/main, origin/HEAD, origin/Feature1)
+Author: balakrishna483 <bkalluri@zetaglobal.com>
+Date:   Tue Aug 22 17:04:53 2023 +0530
+
+    line changes
+
+commit 55ccee60c005d675d6f7c52cfc3bb8e81304963f
+Author: Bmatoori <142801268+Bmatoori@users.noreply.github.com>
+Date:   Tue Aug 22 07:26:58 2023 -0400
+
+    thank you
+
+commit b596711efe3833fabcd8b1e62e657b28d1095828
+Author: Bmatoori <142801268+Bmatoori@users.noreply.github.com>
+Date:   Tue Aug 22 07:19:35 2023 -0400
+
+    bhargavi test file
+
+commit 14aac6ae2baaa28278d6b191b79938f01738302f
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:44:02 2023 +0530
+
+    credentials file added
+
+commit f0bb78bcb258e70263542f16cdf366d8c51158f3
+Author: Hemanth <hnalam@aptroid.com>
+Date:   Tue Aug 22 16:29:05 2023 +0530
+
+    DBconnection information added
+
+commit 70d70a12f0170f7ef2852d62a32feb95c20bbf65
+Author: Hemanth-2023 <142800656+Hemanth-2023@users.noreply.github.com>
+Date:   Tue Aug 22 15:57:49 2023 +0530
+
+    Initial commit
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git push
+To https://github.com/Hemanth-2023/AptroidGitClass1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Hemanth-2023/AptroidGitClass1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git pull
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 11 (delta 5), reused 10 (delta 4), pack-reused 0
+Unpacking objects: 100% (11/11), 1.08 KiB | 11.00 KiB/s, done.
+From https://github.com/Hemanth-2023/AptroidGitClass1
+   280ee85..c3971c5  main       -> origin/main
+   280ee85..0105809  Feature1   -> origin/Feature1
+Merge made by the 'ort' strategy.
+ AptroidGitClass1  | 1 +
+ bhargavi_test.txt | 4 ----
+ 2 files changed, 1 insertion(+), 4 deletions(-)
+ create mode 160000 AptroidGitClass1
+ delete mode 100644 bhargavi_test.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git merge Feature2
+Already up to date.
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git clone Feature2
+fatal: repository 'Feature2' does not exist
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git clone -b Feature2
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git branch -d Feature2
+Deleted branch Feature2 (was 01fe395).
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git branch --merged
+* main
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git push origin --delete Feature2
+To https://github.com/Hemanth-2023/AptroidGitClass1.git
+ - [deleted]         Feature2
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ ls
+AptroidGitClass1/  Credentials.txt  DBConnection.txt  README.md  filw1.txt
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git log --oneline
+52c1f78 (HEAD -> main) Merge branch 'main' of https://github.com/Hemanth-2023/AptroidGitClass1
+01fe395 awesome
+c3971c5 (origin/main, origin/HEAD) yt
+599354b changes
+280ee85 line changes
+e4fab02 lines changed
+55ccee6 thank you
+b596711 bhargavi test file
+14aac6a credentials file added
+f0bb78b DBconnection information added
+70d70a1 Initial commit
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$ git push origin --delete Feature_test
+To https://github.com/Hemanth-2023/AptroidGitClass1.git
+ - [deleted]         Feature_test
+
+AzureAD+BhargaviMatoori@APT-BhargaviM MINGW64 ~/Documents/GitHub/GitHubFirstRepo/AptroidGitClass1 (main)
+$
